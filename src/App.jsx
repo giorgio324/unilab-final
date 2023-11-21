@@ -21,7 +21,12 @@ const App = () => {
     <section className="container">
       <Score>{score}</Score>
       {gameOver ? (
-        <GameOver score={score} />
+        <GameOver
+          score={score}
+          setGameOver={setGameOver}
+          setScore={setScore}
+          setStage={setStage}
+        />
       ) : (
         <Game
           data={data}
