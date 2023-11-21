@@ -3,3 +3,67 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.container {
+  min-height: 100vh;
+  background-color: #ede8e3;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  position: relative;
+}
+.score {
+  background-color: #f4f3f6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: absolute;
+  top: 40px;
+  left: 60px;
+}
+.level {
+  background-color: #f4f3f6;
+  padding: 10px 20px;
+  border-radius: 8px;
+  position: absolute;
+  right: 60px;
+  top: 40px;
+}
+.game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+.question {
+  width: 317px;
+  height: 145px;
+}
+.question-card {
+  width: 510px;
+  height: 81px;
+  padding: 10px;
+  background-color: #f4f3f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.question-letter {
+  width: 40px;
+  height: 40px;
+  background-color: #ede8e3;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+}
+.answer {
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
