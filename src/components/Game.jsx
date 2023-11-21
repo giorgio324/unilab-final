@@ -27,6 +27,7 @@ const Game = ({
           <Question
             key={index}
             score={score}
+            stage={stage}
             setStage={setStage}
             setGameOver={setGameOver}
             item={item}

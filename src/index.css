@@ -67,3 +67,19 @@
   justify-content: center;
   align-items: center;
 }
+.game-over-container {
+  margin-top: 40px;
+  text-align: center;
+}
+.game-over-container h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+.game-over-container h2 {
+  margin-bottom: 320px;
+}
+.game-over-container div {
+  width: 100%;
+  background-color: white;
+  height: 20px;
+}

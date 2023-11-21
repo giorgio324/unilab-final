@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Score from "./components/Score";
 import "./index.css";
 import Game from "./components/Game";
+import GameOver from "./components/GameOver";
 const App = () => {
   const [data, setData] = useState([]);
   const [score, setScore] = useState(200);
@@ -20,7 +21,7 @@ const App = () => {
     <section className="container">
       <Score>{score}</Score>
       {gameOver ? (
-        <h1>game over</h1>
+        <GameOver score={score} />
       ) : (
         <Game
           data={data}

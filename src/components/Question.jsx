@@ -6,6 +6,7 @@ const Question = ({
   setScore,
   setGameOver,
   setStage,
+  stage,
 }) => {
   const getLetter = (index) => {
     if (index === 0) {
@@ -27,6 +28,10 @@ const Question = ({
     }
     if (score === 20) {
       setScore((prevState) => prevState - 20);
+      setGameOver(true);
+      return;
+    }
+    if (stage === 9) {
       setGameOver(true);
       return;
     }
