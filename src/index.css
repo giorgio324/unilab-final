@@ -6,10 +6,12 @@
 
 .container {
   min-height: 100vh;
+  width: 100%;
   background-color: #ede8e3;
   display: flex;
-  justify-content: center;
-  align-items: start;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   position: relative;
 }
 .score {
@@ -27,6 +29,10 @@
   position: absolute;
   right: 60px;
   top: 40px;
+}
+.hint {
+  color: #191d63;
+  font-size: 28px;
 }
 .game-container {
   display: flex;
@@ -70,6 +76,7 @@
 .game-over-container {
   margin-top: 40px;
   text-align: center;
+  flex-grow: 1;
 }
 .game-over-container h1 {
   font-size: 48px;
@@ -82,4 +89,22 @@
   width: 100%;
   background-color: white;
   height: 20px;
+}
+.btn {
+  width: 240px;
+  height: 60px;
+  background: #747475;
+  border-radius: 8px;
+  border: transparent;
+  cursor: pointer;
+  opacity: 0.5;
+}
+.btn-container {
+  width: 100%;
+  background-color: #f4f3f6;
+  padding: 15px 0;
+  padding-right: 380px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }

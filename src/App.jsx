@@ -3,6 +3,7 @@ import Score from "./components/Score";
 import "./index.css";
 import Game from "./components/Game";
 import GameOver from "./components/GameOver";
+import Button from "./components/Button";
 const App = () => {
   const [data, setData] = useState([]);
   const [score, setScore] = useState(200);
@@ -38,7 +39,17 @@ const App = () => {
           score={score}
         />
       )}
-      <Score level>{stage}/10</Score>
+      {/* check if game is over to render the try again button */}
+      {gameOver && (
+        <Button
+          setGameOver={setGameOver}
+          setScore={setScore}
+          setStage={setStage}
+        >
+          try again
+        </Button>
+      )}
+      {!gameOver && <Score level>{stage}/10</Score>}
     </section>
   );
 };
